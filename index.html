@@ -4,11 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Ralph | WordPress Developer</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
     <style>
         * {
             margin: 0;
@@ -25,7 +22,6 @@
         }
 
         /* Cursor glow */
-
         .cursor {
             position: fixed;
             width: 500px;
@@ -37,7 +33,6 @@
         }
 
         /* NAV */
-
         nav {
             position: fixed;
             width: 100%;
@@ -87,7 +82,6 @@
         }
 
         /* HERO */
-
         .hero {
             height: 100vh;
             display: flex;
@@ -115,7 +109,6 @@
         }
 
         /* BUTTON */
-
         .btn {
             display: inline-block;
             padding: 12px 24px;
@@ -132,7 +125,6 @@
         }
 
         /* SECTION */
-
         section {
             padding: 100px 0;
         }
@@ -143,7 +135,6 @@
         }
 
         /* ABOUT */
-
         .about {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -157,7 +148,6 @@
         }
 
         /* PROJECTS */
-
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -197,28 +187,32 @@
         }
 
         /* SKILLS */
-
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 20px;
-        }
-
         .skill {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            transition: .3s;
+            margin-bottom: 25px;
         }
 
-        .skill:hover {
-            transform: translateY(-5px);
-            background: #334155;
+        .skill p {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 8px;
+            background: #1e293b;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+            border-radius: 20px;
+            transition: width 1.5s ease;
         }
 
         /* CONTACT */
-
         .contact {
             text-align: center;
         }
@@ -239,7 +233,6 @@
         }
 
         /* REVEAL ANIMATION */
-
         .reveal {
             opacity: 0;
             transform: translateY(40px);
@@ -252,7 +245,6 @@
         }
 
         @media(max-width:800px) {
-
             .hero h1 {
                 font-size: 36px;
             }
@@ -260,267 +252,190 @@
             .about {
                 grid-template-columns: 1fr;
             }
-
         }
     </style>
 </head>
 
 <body>
-
     <div class="cursor"></div>
-
     <nav>
-
         <div class="container nav-inner">
-
             <div class="logo">Ralph Dev</div>
-
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
-
         </div>
-
     </nav>
-
     <!-- HERO -->
-
     <section class="hero">
-
         <div class="container">
-
-            <h1>Hello I'm <span>Ralph</span></h1>
-
+            <h1>Hello I'm <span>Ralph</span>
+            </h1>
             <h2 id="typing"></h2>
-
-            <p>
-                WordPress & PHP developer specializing in custom plugins,
-                themes, and scalable web applications.
-            </p>
-
+            <p> WordPress & PHP developer specializing in custom plugins, themes, and scalable web applications. </p>
             <a class="btn" href="#projects">View Projects</a>
-
         </div>
-
     </section>
-
     <!-- ABOUT -->
-
     <section id="about" class="reveal">
-
         <div class="container">
-
             <h2 class="section-title">About</h2>
-
             <div class="about">
-
                 <div>
-
-                    <p>
-                        I'm a WordPress and PHP developer with experience building
-                        custom themes, plugins, and scalable web applications.
-                    </p>
-
+                    <p> I'm a WordPress and PHP developer with experience building custom themes, plugins, and scalable
+                        web applications. </p>
                     <br>
-
-                    <p>
-                        I also build modern interfaces using React and JavaScript
-                        to create fast and user-friendly systems.
-                    </p>
-
+                    <p> I also build modern interfaces using React and JavaScript to create fast and user-friendly
+                        systems. </p>
                 </div>
-
                 <img src="https://images.unsplash.com/photo-1581092335878-3c2c5e1b7b6f">
-
             </div>
-
         </div>
-
     </section>
-
     <!-- PROJECTS -->
-
     <section id="projects" class="reveal">
-
         <div class="container">
-
             <h2 class="section-title">Projects</h2>
-
             <div class="projects">
-
                 <div class="project">
-
                     <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-
                     <div class="project-overlay">
                         <p>WordPress Multisite System</p>
                     </div>
-
                 </div>
-
                 <div class="project">
-
                     <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6">
-
                     <div class="project-overlay">
                         <p>React Dashboard</p>
                     </div>
-
                 </div>
-
                 <div class="project">
-
                     <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3">
-
                     <div class="project-overlay">
                         <p>Custom Plugin Development</p>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
     <!-- SKILLS -->
-
     <section id="skills" class="reveal">
-
         <div class="container">
-
             <h2 class="section-title">Skills</h2>
-
-            <div class="skills">
-
-                <div class="skill">WordPress</div>
-                <div class="skill">PHP</div>
-                <div class="skill">React JS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">MySQL</div>
-                <div class="skill">REST APIs</div>
-
+            <div class="skill">
+                <p>WordPress Development</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="95%"></div>
+                </div>
             </div>
-
+            <div class="skill">
+                <p>PHP</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>React JS</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="80%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>MySQL</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                </div>
+            </div>
         </div>
-
     </section>
-
     <!-- CONTACT -->
-
     <section id="contact" class="reveal">
-
         <div class="container">
-
             <h2 class="section-title">Contact</h2>
-
             <div class="contact">
-
                 <input placeholder="Name">
                 <input placeholder="Email">
                 <textarea rows="4" placeholder="Message"></textarea>
-
                 <button class="btn">Send Message</button>
-
             </div>
-
         </div>
-
     </section>
-
-    <footer>
-
-        © 2026 Ralph — WordPress Developer
-
-    </footer>
-
+    <footer> © 2026 Ralph — WordPress Developer </footer>
     <script>
-
         /* typing animation */
-
         const text = ["WordPress Developer", "PHP Developer", "React Developer"]
-
         let count = 0;
         let index = 0;
         let currentText = "";
         let letter = "";
-
-            (function type() {
-
-                if (count === text.length) {
-                    count = 0
-                }
-
-                currentText = text[count]
-                letter = currentText.slice(0, ++index)
-
-                document.getElementById("typing").textContent = letter
-
-                if (letter.length === currentText.length) {
-
-                    count++
-                    index = 0
-                    setTimeout(type, 1500)
-
-                } else {
-
-                    setTimeout(type, 80)
-
-                }
-
-            })()
-
+        (function type() {
+            if (count === text.length) {
+                count = 0
+            }
+            currentText = text[count]
+            letter = currentText.slice(0, ++index)
+            document.getElementById("typing").textContent = letter
+            if (letter.length === currentText.length) {
+                count++
+                index = 0
+                setTimeout(type, 1500)
+            } else {
+                setTimeout(type, 80)
+            }
+        })()
         /* reveal animation */
-
         function reveal() {
-
             const reveals = document.querySelectorAll(".reveal")
-
             reveals.forEach(el => {
-
                 const windowHeight = window.innerHeight
                 const elementTop = el.getBoundingClientRect().top
                 const elementVisible = 120
-
                 if (elementTop < windowHeight - elementVisible) {
-
                     el.classList.add("active")
-
                 }
-
             })
-
         }
-
         window.addEventListener("scroll", reveal)
-
         /* nav scroll effect */
-
         window.addEventListener("scroll", function () {
-
             const nav = document.querySelector("nav")
-
             nav.classList.toggle("scrolled", window.scrollY > 50)
-
-        })
-
+        });
         /* cursor glow */
-
         const cursor = document.querySelector(".cursor")
-
         document.addEventListener("mousemove", e => {
-
             cursor.style.left = e.clientX + "px"
             cursor.style.top = e.clientY + "px"
+        });
+        const skillBars = document.querySelectorAll(".skill-progress");
 
-        })
-
+        function animateSkills() {
+            skillBars.forEach(bar => {
+                const rect = bar.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    bar.style.width = bar.dataset.width;
+                }
+            });
+        }
+        window.addEventListener("scroll", animateSkills);
     </script>
-
 </body>
 
 </html>
