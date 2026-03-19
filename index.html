@@ -222,13 +222,38 @@
             text-align: center;
         }
 
-        .contact input,
-        .contact textarea {
-            width: 100%;
-            padding: 12px;
-            border-radius: 6px;
-            border: none;
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-card {
+            background: #1e293b;
+            padding: 25px 40px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: .3s;
+            min-width: 160px;
+        }
+
+        .contact-card span {
+            font-size: 28px;
+            display: block;
             margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            font-size: 14px;
+            opacity: .8;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            background: #334155;
         }
 
         footer {
@@ -298,9 +323,18 @@
             <h2 class="section-title">About</h2>
             <div class="about">
                 <div>
-                    <p> I’m a web developer with 9 years of experience, mainly working with WordPress and also with Shopify, Webflow, and some Magento. I build and customize themes and plugins, handle both front-end and back-end development, and integrate APIs to connect websites with external services. I also manage technical tasks like server setup, DNS, SSL, CDN, backups, and troubleshooting. I have experience with web design and converting designs to websites, and I work with builders like Divi, Elementor, WP Bakery, and Oxygen. I also build e-commerce sites, improve website performance, and set up SEO and Google Analytics. In addition, I have about one year of experience with React JS, React Native, and C#, and I’m continuing to improve my skills in these technologies. </p>
+                    <p> I’m a web developer with 9 years of experience, mainly working with WordPress and also with
+                        Shopify, Webflow, and some Magento. I build and customize themes and plugins, handle both
+                        front-end and back-end development, and integrate APIs to connect websites with external
+                        services. I also manage technical tasks like server setup, DNS, SSL, CDN, backups, and
+                        troubleshooting. I have experience with web design and converting designs to websites, and I
+                        work with builders like Divi, Elementor, WP Bakery, and Oxygen. I also build e-commerce sites,
+                        improve website performance, and set up SEO and Google Analytics. In addition, I have about one
+                        year of experience with React JS, React Native, and C#, and I’m continuing to improve my skills
+                        in these technologies. </p>
                 </div>
-                <img src="https://lh3.googleusercontent.com/rd-d/ALs6j_GxO0u8JLu5ZoGUyo440E_v7XhQU6eddsHb9trMqDGjn4np33oaLndF-H5RRM0RimBI-a4DfLQE9a7AVaSuTLiUe_OvB_LIpBMynULStDGbdZwTnlqheKk4YIUbLH-iZhZz5YG41QDuikQlCYmLkEFcoJYidfUDCPQXJKtGVWo1g9qc2s5JA4SWbPYpIBIT0YyDqOUv6rfu5Fs0-DQREYQv56p6QC-Nd1dWOv2183Ur3os7HrWGeJzcTbD0jhv3xf74R9m9NliRKf2rSRWjVfa6lQR35TMZbxapFYcI2Zfs2r85W0-TbrlFD-rCWpJhIQeqS01FodiJeLmJXVhKsFkOMuoKzWccW5Ef4K0aa-GomlikDToMjhYqkOlfmyGkeoIL6VBq-IMBCVyFHZsz5bbqpD90CEAkUhXkDbVrZ3gU5WVHFjbXp8Jb2eWM-xL0AR_bwRDD0yi3P5V01LZcFy77iCqa1g4dr2_UBa-BZLnZi4EKGIfBerhWza3JUls96sfBhVrtWaPMjXfV3dbO8L8fY0Bv44u1zQNDravEL9DbQeBO9SDSFt7_zNceV0b5hIDs9j-shjmWQuu6s7KSopxHuab3ljDFW-xHVS8P1NY9VO2ulphzK-gxn_LSR7g1AHROmUj4BDGgX6_ByHumeBi2yQGkVOxpmk7L4agrcipCkXmF6Bg4N7leUeuR854v0w1qSNXOhW4GjE42EE8HFm-sDikc8P5d4KUNQfAFfg5zV2hIOwF6LLsAdXuqWvRKiGsSmfWLHAnsW_qwhH1GNxo9WkM_bHvkjVBXkGAu9TvFby_fg0Mmd5A7AEQtDPfL6XsGwUpyFgv1WutddIMT3ReCx6fVAc4CqbswyUFSKsMwfYagFnEF1K9MX8E8YYKSN8HGueGlLz-wm7UC2KaqKg5NFmU0fAoBi0lVfNah5XrApxWpRrmpoTzmaqTBUNTnX9fDNBYcGPBCSuyTly7D5nn-yUTTlta5p_AQNZUT32uFIEUPATDOP_hv1E29oE0qsKAqiplogP4C0koU3sr5HjCvmH4wLHxySQSD1nzTgDJNuHh4mG5CiqHLy3VbptbNxAB0OAkEEpT6W-V8q15ni0omqA=s1920-w1920-h953?auditContext=prefetch">
+                <img
+                    src="https://lh3.googleusercontent.com/rd-d/ALs6j_GxO0u8JLu5ZoGUyo440E_v7XhQU6eddsHb9trMqDGjn4np33oaLndF-H5RRM0RimBI-a4DfLQE9a7AVaSuTLiUe_OvB_LIpBMynULStDGbdZwTnlqheKk4YIUbLH-iZhZz5YG41QDuikQlCYmLkEFcoJYidfUDCPQXJKtGVWo1g9qc2s5JA4SWbPYpIBIT0YyDqOUv6rfu5Fs0-DQREYQv56p6QC-Nd1dWOv2183Ur3os7HrWGeJzcTbD0jhv3xf74R9m9NliRKf2rSRWjVfa6lQR35TMZbxapFYcI2Zfs2r85W0-TbrlFD-rCWpJhIQeqS01FodiJeLmJXVhKsFkOMuoKzWccW5Ef4K0aa-GomlikDToMjhYqkOlfmyGkeoIL6VBq-IMBCVyFHZsz5bbqpD90CEAkUhXkDbVrZ3gU5WVHFjbXp8Jb2eWM-xL0AR_bwRDD0yi3P5V01LZcFy77iCqa1g4dr2_UBa-BZLnZi4EKGIfBerhWza3JUls96sfBhVrtWaPMjXfV3dbO8L8fY0Bv44u1zQNDravEL9DbQeBO9SDSFt7_zNceV0b5hIDs9j-shjmWQuu6s7KSopxHuab3ljDFW-xHVS8P1NY9VO2ulphzK-gxn_LSR7g1AHROmUj4BDGgX6_ByHumeBi2yQGkVOxpmk7L4agrcipCkXmF6Bg4N7leUeuR854v0w1qSNXOhW4GjE42EE8HFm-sDikc8P5d4KUNQfAFfg5zV2hIOwF6LLsAdXuqWvRKiGsSmfWLHAnsW_qwhH1GNxo9WkM_bHvkjVBXkGAu9TvFby_fg0Mmd5A7AEQtDPfL6XsGwUpyFgv1WutddIMT3ReCx6fVAc4CqbswyUFSKsMwfYagFnEF1K9MX8E8YYKSN8HGueGlLz-wm7UC2KaqKg5NFmU0fAoBi0lVfNah5XrApxWpRrmpoTzmaqTBUNTnX9fDNBYcGPBCSuyTly7D5nn-yUTTlta5p_AQNZUT32uFIEUPATDOP_hv1E29oE0qsKAqiplogP4C0koU3sr5HjCvmH4wLHxySQSD1nzTgDJNuHh4mG5CiqHLy3VbptbNxAB0OAkEEpT6W-V8q15ni0omqA=s1920-w1920-h953?auditContext=prefetch">
             </div>
         </div>
     </section>
@@ -383,20 +417,37 @@
     </section>
     <!-- CONTACT -->
     <section id="contact" class="reveal">
+
         <div class="container">
+
             <h2 class="section-title">Contact</h2>
-            <div class="contact">
-                <input placeholder="Name">
-                <input placeholder="Email">
-                <textarea rows="4" placeholder="Message"></textarea>
-                <button class="btn">Send Message</button>
+
+            <div class="contact-links">
+
+                <a href="ralphborrel@gmail.com" class="contact-card">
+                    <span>📧</span>
+                    <p>Email</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ralph-miguel-borrel-a24128217/" target="_blank" class="contact-card">
+                    <span>💼</span>
+                    <p>LinkedIn</p>
+                </a>
+
+                <a href="https://v2.onlinejobs.ph/jobseekers/info/598016" target="_blank" class="contact-card">
+                    <span>💬</span>
+                    <p>Online Jobs</p>
+                </a>
+
             </div>
+
         </div>
+
     </section>
     <footer> © 2026 Ralph — WordPress Developer </footer>
     <script>
         /* typing animation */
-        const text = ["WordPress Developer", "PHP Developer", "WordPress"]
+        const text = ["WordPress Developer", "PHP Developer", "WordPress Developer"]
         let count = 0;
         let index = 0;
         let currentText = "";
